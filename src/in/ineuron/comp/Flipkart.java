@@ -44,6 +44,8 @@ public class Flipkart {
 			billAmount = billAmount + f;
 		}
 		
+		billAmount = billAmount - (billAmount * (discount/100.0f));
+		
 		random = new Random();
 		oid = random.nextInt(1000);
 		String msg = courier.deliver(oid);
